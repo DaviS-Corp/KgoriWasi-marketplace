@@ -4,6 +4,7 @@
 	<title>Shoping Cart</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 <!--===============================================================================================-->	
 	<link rel="icon" type="image/png" href="images/icons/favicon.png"/>
 <!--===============================================================================================-->
@@ -28,6 +29,8 @@
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
+	<link href="https://fonts.googleapis.com/css?family=Lato|Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
+	
 </head>
 <body class="animsition">
 	
@@ -472,11 +475,11 @@
 									</div>
 
 									<div class="bor8 bg0 m-b-12">
-										<input class="stext-111 cl8 plh3 size-111 p-lr-15" type="text" name="state" placeholder="Departamento/Estado">
+										<input class="stext-111 cl8 plh3 size-111 p-lr-15" type="text" name="state" placeholder="State /  country">
 									</div>
 
 									<div class="bor8 bg0 m-b-22">
-										<input class="stext-111 cl8 plh3 size-111 p-lr-15" type="text" name="postcode" placeholder="Codigo Postal">
+										<input class="stext-111 cl8 plh3 size-111 p-lr-15" type="text" name="postcode" placeholder="Postcode / Zip">
 									</div>
 									
 									<div class="flex-w">
@@ -502,10 +505,214 @@
 								</span>
 							</div>
 						</div>
+						<div class="row isotope-grid">
+						<div class="col-sm-6 col-md-6 col-lg-3 p-b-35 isotope-item women">
+					<!-- Block2 -->
+					<div class="block2">
+						<div class="block2-pic hov-img0 js-show-modal1" >
+							<img src="http://icons.iconarchive.com/icons/designbolts/credit-card-payment/256/Visa-icon.png" alt="IMG-PRODUCT">
+							<img src="http://icons.iconarchive.com/icons/designbolts/credit-card-payment/256/Master-Card-icon.png" alt="IMG-PRODUCT">
+							
+						</div>
+					</div>
+				</div>
 
-						<button class="flex-c-m stext-101 cl0 size-116 bg3 bor14 hov-btn3 p-lr-15 trans-04 pointer">
+				<div class="col-sm-6 col-md-6 col-lg-3 p-b-35 isotope-item women">
+					<!-- Block2 -->
+					<div class="block2">
+						<div class="block2-pic hov-img0 js-show-modal2">
+							<img src="http://icons.iconarchive.com/icons/designbolts/credit-card-payment/256/Paypal-icon.png" alt="IMG-PRODUCT">
+						</div>
+					</div>
+				</div>
+						</div>	
+		<!-- Modal1 -->
+	<div class="wrap-modal1 js-modal1 p-t-60 p-b-20" id="modal1">
+		<div class="overlay-modal1 js-hide-modal1"></div>
+
+		<div class="container">
+			<div class="bg0 p-t-60 p-b-30 p-lr-15-lg how-pos3-parent">
+				<button class="how-pos3 hov3 trans-04 js-hide-modal1">
+					<img src="images/icons/icon-close.png" alt="CLOSE">
+				</button>
+
+				<div class="row">
+					<div class="col-md-6 col-lg-7 p-b-30">
+						<div class="p-l-25 p-r-30 p-lr-0-lg">
+							<div class="wrap-slick3 flex-sb flex-w">
+								<div class="wrap-slick3-dots"></div>
+								<div class="wrap-slick3-arrows flex-sb-m flex-w"></div>
+
+								<div class="slick3 gallery-lb">
+										<!-- Tarjeta -->
+										<section class="tarjeta" id="tarjeta">
+											<div class="delantera">
+												<div class="logo-marca" id="logo-marca">
+													<!-- <img src="img/logos/visa.png" alt=""> -->
+												</div>
+												<img src="img/chip-tarjeta.png" class="chip" alt="">
+												<div class="datos">
+													<div class="grupo" id="numero">
+														<p class="label">Número Tarjeta</p>
+														<p class="numero">#### #### #### ####</p>
+													</div>
+													<div class="flexbox">
+														<div class="grupo" id="nombre">
+															<p class="label">Nombre Tarjeta</p>
+															<p class="nombre">Jhon Doe</p>
+														</div>
+
+														<div class="grupo" id="expiracion">
+															<p class="label">Expiracion</p>
+															<p class="expiracion"><span class="mes">MM</span> / <span class="year">AA</span></p>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="trasera">
+												<div class="barra-magnetica"></div>
+												<div class="datos">
+													<div class="grupo" id="firma">
+														<p class="label">Firma</p>
+														<div class="firma"><p></p></div>
+													</div>
+													<div class="grupo" id="ccv">
+														<p class="label">CCV</p>
+														<p class="ccv"></p>
+													</div>
+												</div>
+												<p class="leyenda">Aplica para todo tipo de targeta, VISA, MASTERD CARD. toda transacccion mediante esta pagina esta completamente segura, mayor informacion, terminos y condiciones en:</p>
+												<a href="#" class="link-banco">www.banco.com</a>
+											</div>
+										</section>							
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-5 p-b-30">
+						<div class="p-r-50 p-t-5 p-lr-0-lg">
+							<h4 class="mtext-105 cl2 js-name-detail p-b-14">
+								Informacion de la Tarjeta
+							</h4>
+							<!-- Formulario -->
+							<form action="" id="formulario-tarjeta" class="formulario-tarjeta">
+								<div class="grupo">
+									<label for="inputNumero">Número Tarjeta</label>
+									<input type="text" class="stext-111 cl8 plh3 size-111 p-lr-15" id="inputNumero" maxlength="19" autocomplete="off" required="">
+								</div>
+								<div class="grupo">
+									<label for="inputNombre">Nombre</label>
+									<input type="text" class="stext-111 cl8 plh3 size-111 p-lr-15" id="inputNombre" maxlength="19" autocomplete="off" required="">
+								</div>
+								<div class="flexbox">
+									<div class="grupo expira">
+										<label for="selectMes">Expiracion</label>
+										<div class="flexbox">
+											<div class="row isotope-grid">
+												<div class="col-sm-6 col-md-6 col-lg-3 p-b-35 isotope-item women">
+													<!-- Block2 -->
+													<div class="block2">
+														<div class="rs1-select2 rs2-select2 bor8 bg0 m-b-12 m-t-9">
+															<select class="js-select2" name="selectMes">
+																<option disabled selected>Mes</option>
+																<option value="1">Enero</option>
+																<option value="2">Febrero</option>
+																<option value="3">Marzo</option>
+																<option value="4">Abril</option>
+																<option value="5">Mayo</option>
+																<option value="6">Junio</option>
+																<option value="7">Julio</option>
+																<option value="8">Agosto</option>
+																<option value="9">Septiembre</option>
+																<option value="10">Octubre</option>
+																<option value="11">Noviembre</option>
+																<option value="12">Diciembre</option>
+															</select>
+															<div class="dropDownSelect2"></div>
+														</div>
+													</div>
+												</div>
+
+												<div class="col-sm-6 col-md-6 col-lg-3 p-b-35 isotope-item women">
+													<!-- Block2 -->
+													<div class="block2">
+														<div class="rs1-select2 rs2-select2 bor8 bg0 m-b-12 m-t-9">
+															<select class="js-select2" name="selectYear">
+																<option disabled selected>Año</option>
+																<option >2021</option>
+																<option >2022</option>
+																<option >2023</option>
+																<option >2024</option>
+																<option >2025</option>
+																<option >2026</option>
+																<option >2027</option>
+																<option >2028</option>
+																<option >2029</option>
+																<option >2030</option>
+															</select>
+															<div class="dropDownSelect2"></div>
+														</div>
+													</div>
+												</div>
+											</div>				
+										</div>
+									</div>
+									<div class="grupo ccv">
+										<label for="inputCCV">CCV</label>
+										<input type="password" class="stext-111 cl8 plh3 size-111 p-lr-15" id="inputCCV" maxlength="3" required="">
+									</div>
+								</div>
+								<button class="flex-c-m stext-101 cl0 size-116 bg3 bor14 hov-btn3 p-lr-15 trans-04 pointer">
+									Pagar
+								</button>
+							</form>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+						<div class="wrap-modal2 js-modal2 p-t-60 p-b-20" id="modal2">
+			<div class="overlay-modal2 js-hide-modal2"></div>				
+		<div class="container">
+			<div class="bg0 p-t-60 p-b-30 p-lr-15-lg how-pos3-parent">
+				<button class="how-pos3 hov3 trans-04 js-hide-modal1">
+					<img src="images/icons/icon-close.png" alt="CLOSE">
+				</button>
+
+				<div class="row">	
+					<div class="col-md-6 col-lg-5 p-b-30">
+						<div class="p-r-50 p-t-5 p-lr-0-lg">
+							<h4 class="mtext-105 cl2 js-name-detail p-b-14">
+								Nombre:
+							</h4>
+							<input type="text" id="inputNombre" maxlength="30" autocomplete="off" required="">
+							<h4 class="mtext-105 cl2 js-name-detail p-b-14">
+								Correo:
+							</h4>
+							<input type="email" id="email" pattern=".+@gmail\.com" placeholder="correo@ejemplo.com" size="30" required="">
+							<!--  -->
+							<div class="p-t-33">
+								
+								<div class="flex-w flex-r-m p-b-10">
+<button class="flex-c-m stext-101 cl0 size-116 bg3 bor14 hov-btn3 p-lr-15 trans-04 pointer">
 							Pagar
 						</button>
+									</div>
+								</div>	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+						</div>
 					</div>
 				</div>
 			</div>
@@ -667,7 +874,110 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 			<i class="zmdi zmdi-chevron-up"></i>
 		</span>
 	</div>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+<script >
+const tarjeta = document.querySelector('#tarjeta'),
+	  btnAbrirFormulario = document.querySelector('#btn-abrir-formulario'),
+	  formulario = document.querySelector('#formulario-tarjeta'),
+	  numeroTarjeta = document.querySelector('#tarjeta .numero'),
+	  nombreTarjeta = document.querySelector('#tarjeta .nombre'),
+	  logoMarca = document.querySelector('#logo-marca'),
+	  firma = document.querySelector('#tarjeta .firma p'),
+	  mesExpiracion = document.querySelector('#tarjeta .mes'),
+	  yearExpiracion = document.querySelector('#tarjeta .year'),
+	  ccv = document.querySelector('#tarjeta .ccv');
 
+// * Volteamos la tarjeta para mostrar el frente.
+const mostrarFrente = () => {
+	if(tarjeta.classList.contains('active')){
+		tarjeta.classList.remove('active');
+	}
+}
+
+// * Rotacion de la tarjeta
+tarjeta.addEventListener('click', () => {
+	tarjeta.classList.toggle('active');
+});
+// * Input numero de tarjeta
+formulario.inputNumero.addEventListener('keyup', (e) => {
+	let valorInput = e.target.value;
+
+	formulario.inputNumero.value = valorInput
+	// Eliminamos espacios en blanco
+	.replace(/\s/g, '')
+	// Eliminar las letras
+	.replace(/\D/g, '')
+	// Ponemos espacio cada cuatro numeros
+	.replace(/([0-9]{4})/g, '$1 ')
+	// Elimina el ultimo espaciado
+	.trim();
+
+	numeroTarjeta.textContent = valorInput;
+
+	if(valorInput == ''){
+		numeroTarjeta.textContent = '#### #### #### ####';
+
+		logoMarca.innerHTML = '';
+	}
+
+	if(valorInput[0] == 4){
+		logoMarca.innerHTML = '';
+		const imagen = document.createElement('img');
+		imagen.src = 'img/logos/visa.png';
+		logoMarca.appendChild(imagen);
+	} else if(valorInput[0] == 5){
+		logoMarca.innerHTML = '';
+		const imagen = document.createElement('img');
+		imagen.src = 'img/logos/mastercard.png';
+		logoMarca.appendChild(imagen);
+	}
+
+	// Volteamos la tarjeta para que el usuario vea el frente.
+	mostrarFrente();
+});
+
+// * Input nombre de tarjeta
+formulario.inputNombre.addEventListener('keyup', (e) => {
+	let valorInput = e.target.value;
+
+	formulario.inputNombre.value = valorInput.replace(/[0-9]/g, '');
+	nombreTarjeta.textContent = valorInput;
+	firma.textContent = valorInput;
+
+	if(valorInput == ''){
+		nombreTarjeta.textContent = 'Jhon Doe';
+	}
+
+	mostrarFrente();
+});
+
+// * Select mes
+formulario.selectMes.addEventListener('change', (e) => {
+	mesExpiracion.textContent = e.target.value;
+	mostrarFrente();
+});
+
+// * Select Año
+formulario.selectYear.addEventListener('change', (e) => {
+	yearExpiracion.textContent = e.target.value.slice(2);
+	mostrarFrente();
+});
+
+// * CCV
+formulario.inputCCV.addEventListener('keyup', () => {
+	if(!tarjeta.classList.contains('active')){
+		tarjeta.classList.toggle('active');
+	}
+
+	formulario.inputCCV.value = formulario.inputCCV.value
+	// Eliminar los espacios
+	.replace(/\s/g, '')
+	// Eliminar las letras
+	.replace(/\D/g, '');
+
+	ccv.textContent = formulario.inputCCV.value;
+});
+	</script>
 <!--===============================================================================================-->	
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
@@ -704,8 +1014,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 			})
 		});
 	</script>
-<!--===============================================================================================-->
+<!--===============================================================================================
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="js/pago.js"></script>-->
 	<script src="js/main.js"></script>
-
 </body>
 </html>
